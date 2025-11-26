@@ -1,0 +1,26 @@
+--- a/src/donate.h
++++ b/src/donate.h
+@@ -37,7 +37,7 @@ constexpr const int kDonateHost_Version = 1;
+  *
+  * Switching is instant and only happens after a successful connection, so you never lose any hashes.
+  *
+  * If you plan on changing donations to 0%, please consider making a one-off donation to my wallet:
+- * XMR: 48edfHu7V9Z84YzzMa6fUueoELZ9ZRXq9VetWzYGzKt52XU5xvqgzYnDK9URnRoJMk1j8nLwEVsaSWJ4fhdUyZijBGUicoD
++ * (Developer donation completely disabled by user)
+  */
+-constexpr const int kDefaultDonateLevel = 0;
++constexpr const int kDefaultDonateLevel = 0;  // DISABLED - No developer fee
+ constexpr const int kMinimumDonateLevel = 0;
+ 
+--- a/src/config.json
++++ b/src/config.json
+@@ -43,8 +43,8 @@
+         "cn-lite/0": false
+     },
+-    "donate-level": 1,
+-    "donate-over-proxy": 1,
++    "donate-level": 0,
++    "donate-over-proxy": 0,
+     "log-file": null,
+     "pools": [
+         {
